@@ -29,16 +29,16 @@ BookBuddy is a user-friendly React application that allows users to browse, add,
 
 ### 1. Clone the repository
 
-\`\`\`bash
+```bash
 git clone https://github.com/your-username/bookbuddy.git
 cd bookbuddy
-\`\`\`
+```
 
 ### 2. Install dependencies
 
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 ### 3. Set up JSON Server
 
@@ -47,15 +47,15 @@ Create a \`db.json\` file in the root directory:
 
 Start the server:
 
-\`\`\`bash
+```bash
 json-server --watch db.json --port 3001
-\`\`\`
+```
 
 ### 4. Run the React app
 
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 Visit [http://localhost:5173](http://localhost:5173) to view the app.
 
@@ -63,7 +63,7 @@ Visit [http://localhost:5173](http://localhost:5173) to view the app.
 
 ## 📁 Project Structure
 
-\`\`\`
+
 bookbuddy/
 ├── public/
 ├── src/
@@ -74,7 +74,7 @@ bookbuddy/
 ├── db.json
 ├── README.md
 └── package.json
-\`\`\`
+
 
 ---
 
