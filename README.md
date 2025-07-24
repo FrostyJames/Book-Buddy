@@ -78,6 +78,9 @@ bookbuddy/
 
 ---
 
+## Collaborators
+### 1. James Ivan
+### 2. Angel Wambui
 
 ## 📄 License
 
