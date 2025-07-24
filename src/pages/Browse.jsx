@@ -6,7 +6,7 @@ function Browse() {
   const [showDesc, setShowDesc] = useState({});
 
   useEffect(() => {
-    fetch('http://localhost:3001/books')
+    fetch('https://json-server-ozyq.onrender.com/books')
       .then(res => res.json())
       .then(data => setBooks(data))
       .catch(err => console.error('Error fetching books:', err));
