@@ -19,7 +19,7 @@ function Home() {
 
   // Fetch books from JSON Server
   useEffect(() => {
-    fetch('http://localhost:3001/books')
+    fetch('https://json-server-ozyq.onrender.com/books')
       .then(res => res.json())
       .then(data => setBooks(data))
       .catch(err => console.error('Error fetching books:', err));
@@ -52,7 +52,7 @@ function Home() {
   const addBook = () => {
     const bookWithId = { ...newBook, id: Date.now() };
 
-    fetch('http://localhost:3001/books', {
+    fetch('https://json-server-ozyq.onrender.com/books', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(bookWithId)
@@ -74,7 +74,7 @@ function Home() {
   // Permanently delete book from JSON Server
   const deleteBook = (id) => {
     if (window.confirm('Are you sure you want to permanently delete this book?')) {
-      fetch(`http://localhost:3001/books/${id}`, {
+      fetch('https://json-server-ozyq.onrender.com/books/${id}', {
         method: 'DELETE'
       })
         .then(() => {
