@@ -123,7 +123,16 @@ function Home() {
         ))}
       </div>
 
-     
+      <div className="add-book-form">
+        <h2>Add a Book</h2>
+        <input name="title" placeholder="Title" value={newBook.title} onChange={handleChange} />
+        <input name="author" placeholder="Author" value={newBook.author} onChange={handleChange} />
+        <input name="genre" placeholder="Genre" value={newBook.genre} onChange={handleChange} />
+        <input name="cover" placeholder="Cover URL" value={newBook.cover} onChange={handleChange} />
+        <input name="description" placeholder="Description" value={newBook.description} onChange={handleChange} />
+        <input name="link" placeholder="Open Library Link" value={newBook.link} onChange={handleChange} />
+        <button onClick={addBook}>Add Book</button>
+      </div>
     </div>
   );
 }
