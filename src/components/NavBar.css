@@ -36,6 +36,6 @@ font-size: 20px;
   color: #0077cc;
 }
 .page-content {
-  margin-bottom: 500px; /* Pushes content below fixed navbar */
+  margin-bottom: 500px; 
   padding: 1rem 2rem;
 }
